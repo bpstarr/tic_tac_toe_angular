@@ -1,0 +1,17 @@
+<div class = "container">
+
+    <h1 style="color:rgb(236, 236, 236); text-align:center;">Tic Tac Toe</h1>
+    <h2 style="color:rgb(102, 7, 36); text-align:center;">Current Player: {{ player }}</h2>
+
+    <button style="display: block; margin: 0 auto;" class ="btn btn-dark mb-2" (click) = "newGame()">Start New Game</button>
+
+    <h2 style="color:rgb(102, 7, 36); text-align:center;" *ngIf="winner" > Player {{ winner }} won the game!</h2>
+
+    <main>
+        <app-square
+            *ngFor ="let val of squares; let i = index"
+            [value] = "val"
+            (click) = "makeMove(i)">
+        </app-square>
+    </main>
+</div>

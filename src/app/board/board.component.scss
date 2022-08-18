@@ -1,0 +1,22 @@
+.container {
+    background-color: rgb(85, 81, 81);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 0px;
+    align-items: center;
+    justify-content: center;
+    
+}
+button {
+    display: block; 
+    margin: 0 auto;
+}
+
+app-square {
+    border: 1px rgba(31, 30, 30, 0.153) solid;
+    height: 200px;
+    color: black;
+}
